@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de CPF</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <main>
+        <form action="/validar_cpf" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome">
+            </div>
+           
+            <div class="cpf">
+               <label for="cpf">CPF:</label>
+               <input id="cpf" type="text" name="cpf">
+            </div>
+    
+            <div>
+                <input type="submit" value="Validar">
+            </div>  
+        </form>
+    </main> 
+</body>
+</html>
